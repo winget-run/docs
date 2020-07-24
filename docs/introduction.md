@@ -6,6 +6,15 @@ title: Introduction
 ## Overview
 This developer-oriented guide outlines the major features and use-cases behind out [winget.run](https://winget.run) REST API. Our major goal for this API has been to empower developers in fetching Winget package data without having to interacting with the GitHub API, possibly running into rate-limits.
 
+TODO: add disclaimer that non public features are undocumented
+TODO: reading the schema
+TODO: on url params
+TODO: application/json
+TODO: error and no data responses
+TODO: pagination
+TODO: on dates
+TODO: on case sensitivity
+
 This guide is divided into multiple sections:
 
 ### General

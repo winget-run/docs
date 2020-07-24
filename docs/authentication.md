@@ -10,6 +10,8 @@ Our API can be used without providing an access token, however, we only recommen
 Ratelimits for unauthenticated requests will make large application development quite difficult.
 :::
 
+TODO: auth header not included in routes section
+
 ## Access tokens
 Using access tokens allows us to more easily track API requests, which in turn makes it possibly to allow developers more access/power with peace of mind.
 
