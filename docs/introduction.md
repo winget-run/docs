@@ -14,6 +14,8 @@ TODO: error and no data responses
 TODO: pagination
 TODO: on dates
 TODO: on case sensitivity
+TODO: add those caution/whatever things everywhere
+TODO: 1 package encompasses multiple version
 
 This guide is divided into multiple sections:
 

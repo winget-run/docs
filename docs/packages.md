@@ -65,7 +65,7 @@ Body:
   Total: 0
 ```
 
-### Single packages
+### Single package
 This route can be used to fetch info for a single package.
 
 #### Url
