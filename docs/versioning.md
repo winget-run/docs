@@ -13,6 +13,11 @@ The current minor and patch API versions can be found under releases on our [Git
 ### Deprecation
 When a new API version is deemed stable, any preceeding versions will become deprecated. These versions should not be used for any new projects while projects already using these versions should aim to update as soon as possible. Deprecated versions will continue to function for at least one month following deprecation after which no guarantees can be made. Any deprecation notices will be displayed on these docs.
 
+As [mentioned in the introduction](/docs/introduction#undocumented-routes), these docs are the definitive guide as to which features of particular API versions and versiones themsolves are stable and backwards compatible. Even if a feature or version exists in the source code, it cannot be considered stable and may be removed without notice unless it is mentioned here.
+
+### Unversioned routes
+There may be routes in the source code which are purposefully unversioned. These should not be used anywhere, even by us on our website. The purpose of these routes is usually testing and they will most likely be removed. While things like this should not make their way into the stable API, things happen.
+
 ## Noteworthy versions
 We currently operate two major versions of the API; v1 and v2.
 

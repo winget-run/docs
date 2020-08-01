@@ -46,6 +46,8 @@ Package related routes are outlined below:
 ### Publisher packages
 This route can be used to view all packages created by a single publisher.
 
+> This route returns paginated results.
+
 #### Url
 `/v2/packages/:publisher`
 

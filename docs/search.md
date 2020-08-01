@@ -55,8 +55,19 @@ Default: false.
 
 This option ensures that each final search result exactly contains the specified query, discarding non-matching results. Additionally, this option cannot be set if a non 'query' search paramter such as name, publisher, etc. is specified.
 
+#### Prefer contains
+Default: false.
+
+This option functions similarly to 'ensure contains', however, instead of removing packages which don't exactly match the search query, results are re-shuffled based on how well they match the query.
+
 #### Sample
-TODO: todo, also set min/max in the query section in /autocomplete (take/sample)
+Default: take (see [pagination](/docs/introduction#pagination)).
+
+The number of packages to sample when 'prefer contains' is specified. This option exists in case packages outside of the number specified by 'take' could be a higher match. While the sorting logic will use 'sample' packages, only 'take' packages will be returned in the final response.
+
+:::caution
+When setting this to any value other than 'take', pagination will no longer work correctly. As such, this should be used for sampling a small number of top results, for example, for an autocomplete search.
+:::
 
 ## Schema
 This route returns 'package' responses with an extra added 'SearchScore' field. For more info about the this schema, please read the package routes section.
@@ -93,6 +104,8 @@ Package search related routes are outlined below:
 ### Package search
 This route can be used to search for packages. It should be used for viewing large amounts for search results.
 
+> This route returns paginated results.
+
 #### Url
 `/v2/packages`
 
@@ -106,6 +119,8 @@ tags: string
 splitQuery: boolean
 partialMatch: boolean
 ensureContains: boolean
+preferContains: boolean
+sample: number
 ```
 
 #### Successful response
@@ -122,38 +137,4 @@ Code: 200
 Body:
   Packages: []
   Total: 0
-```
-
-### Package autocomplete
-This route is similar to the 'package search' route. Calling this endpoint should return more relevant results but can only return the top x results. As such, it is better suited towards autocomplete-type searches.
-
-#### Url
-`/v2/packages/autocomplete`
-
-#### Query
-```
-query: string
-name: string
-publisher: string
-description: string
-tags: string
-splitQuery: boolean
-partialMatch: boolean
-ensureContains: boolean
-take: number
-sample: number
-```
-
-#### Successful response
-```
-Code: 200
-Body:
-  Packages: Package[] (with SearchScore)
-```
-
-#### No data response
-```
-Code: 200
-Body:
-  Packages: []
 ```
