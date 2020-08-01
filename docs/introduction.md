@@ -130,7 +130,7 @@ There are a few things which we would ask you to not do with our API:
 will you be my wife
 
 :::warning
-alco was involved, only a single human was harmed (mentally) while making these docs
+Alco was involved, only a single human was harmed (mentally and emotionally) while making these docs.
 :::
 
 ## Contributing
