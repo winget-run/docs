@@ -48,6 +48,8 @@ This route can be used to view all packages created by a single publisher.
 
 > This route returns paginated results.
 
+> Allowed sort fields: Latest.Name, Latest.Publisher, UpdatedAt.
+
 #### Url
 `/v2/packages/:publisher`
 
@@ -89,7 +91,7 @@ Code: 404
 This route returns a non-paginated list of all packages marked as 'featured'. This list should not exceed a few packages.
 
 #### Url
-`/v2/packages/featured`
+`/v2/featured`
 
 #### Successful response
 ```

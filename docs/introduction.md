@@ -103,6 +103,15 @@ Any routes which would return a single datum (not an array) will return a 404, e
 ### Pagination
 Routes which return an array in their response are generally paginated and will be marked as such in these docs. Any paginated route can accept the 'take' and 'page' query parameters. Take represents the number of documents per page, while page represents the page number (starting from 0 ofc) to return documents for.
 
+### Ordering and sorting
+Results for all paginated routes can be sorted and ordered by mulitple fields which depend on the data being requested.
+
+#### Sorting
+Sorting can be specified by including a 'sort' query parameter. Since this differs based on the data, allowed fields will be specified along with route-specific docs.
+
+#### Ordering
+Ordering is always the same regardless of data; 1 for ascending and -1 for descending and can be specified by setting the 'order' query parameter. The default is always ascending.
+
 #### Take
 - Min: 1
 - Max: 24
@@ -127,7 +136,7 @@ There are a few things which we would ask you to not do with our API:
 - Scraping manifest data (you can use the GitHub API for that instead)
 
 ### FBK
-will you be my wife
+Will you be my wife?
 
 :::warning
 Alco was involved, only a single human was harmed (mentally and emotionally) while making these docs.
@@ -142,4 +151,4 @@ As you can probably imagine, this project requires a lot of work and many a deve
 - Giving us ideas for how to make our site/API better.
 - Supporting us via [monetary donation](https://ko-fi.com/wingetdotrun) (servers are expensive).
 
-Or... if you're so inclined, you can always buy me [this](https://cdn.discordapp.com/attachments/722206274363588608/738731308221595738/6b6hr3gmh4e51.jpg) as thanks!
+<!-- Or... if you're so inclined, you can always buy me [this](/img/neko.jpg) as thanks! -->

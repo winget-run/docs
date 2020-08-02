@@ -13,7 +13,7 @@ Due to potential exploits, limits (TBD) will be imposed to how much stat data ca
 ### Time ranges
 Package stats are aggregated into daily intervals (UTC). However, the API provides an easy method of aggregating these numbers over a range of different intervals:
 - Days
-- Iso Weeks
+- ISO Weeks
 - Months
 
 In addition, iso dates specifying the starting and ending intervals between which to retrieve stats can be supplied. The before date defaults to the current date, whereas the after date defaults to the start of (unix) time. Dates specified for both fields are rounded down based on the binning interval specified (above).

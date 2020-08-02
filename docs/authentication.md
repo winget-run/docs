@@ -4,7 +4,7 @@ title: Authentication
 ---
 
 ## Unauthenticated requests
-Our API can be used (for the most part) without providing an access token, however, we only recommend this method if you plan to play around with the API or only intend to use it for personal purposes or want to call our API directly on your frontend. For any use of the API on the backend, please consider using using API tokens as it will allow for a smoother experience for everyone :smile:.
+Our API can be used (for the most part) without providing an access token, however, we only recommend this method if you plan to play around with the API or only intend to use it for personal purposes or want to call our API directly on your frontend. For any use of the API on the backend, please consider using API tokens as it will allow for a smoother experience for everyone :smile:.
 
 Any routes which require an access token will be marked accordingly.
 

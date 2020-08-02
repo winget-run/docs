@@ -7,7 +7,7 @@ title: Search
 This part of the guide explains how package search related routes function and the best practices surrounding them. We have decided to separate search related content from packages as these routes have added complexity which needs to be focused on and explained to allow developers to make the best use of them.
 
 ### Multiple fields
-Our search algorithm uses MongoDB text search and examines multiple fields with a weighted score for each field in order to determine the most suitable results. While multiple results can be returned with the same score can be returned in the 'package search' rotue, these results are further filtered and sorted in the 'auitocomplete route'.
+Our search algorithm uses MongoDB text search and examines multiple fields with a weighted score for each field in order to determine the most suitable results. While multiple results can be returned with the same score can be returned in the 'package search' rotue, these results are further filtered and sorted using extra query parameters.
 
 Search fields:
 - Name
@@ -105,6 +105,8 @@ Package search related routes are outlined below:
 This route can be used to search for packages. It should be used for viewing large amounts for search results.
 
 > This route returns paginated results.
+
+> Allowed sort fields: SearchScore (default), Latest.Name, Latest.Publisher, UpdatedAt.
 
 #### Url
 `/v2/packages`

@@ -10,7 +10,7 @@ module.exports = {
     navbar: {
       title: "winget.run",
       logo: {
-        alt: "winget.run logo",
+        alt: "Stay home!",
         src: "img/logo.svg",
       },
       links: [
@@ -23,6 +23,11 @@ module.exports = {
         {
           href: "https://github.com/winget-run",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://ko-fi.com/wingetdotrun",
+          label: "Ko-fi",
           position: "right",
         },
       ],
@@ -87,7 +92,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/winget-run/docs/tree/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
