@@ -4,8 +4,8 @@ module.exports = {
   url: "https://docs.winget.run",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "winget.run",
-  projectName: "winget.run",
+  organizationName: "winget-run",
+  projectName: "docs",
   themeConfig: {
     navbar: {
       title: "winget.run",
