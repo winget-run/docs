@@ -1,6 +1,6 @@
 ---
 id: ratelimiting
-title: Ratelimiting
+title: Rate-limiting
 ---
 
 ## Authentication
