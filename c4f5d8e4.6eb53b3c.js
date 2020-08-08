@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{151:function(n,e,o){"use strict";o.r(e);var t=o(0),i=o.n(t);e.default=function(){return"undefined"!=typeof window&&(window.location.href="/docs/introduction"),i.a.createElement(i.a.Fragment,null)}}}]);
