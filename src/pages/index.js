@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 // import clsx from "clsx";
 // import Layout from "@theme/Layout";
 // import Link from "@docusaurus/Link";
@@ -95,7 +95,11 @@
 // }
 
 function Home() {
-  window.location.href = "/docs/introduction";
+  if (typeof window !== "undefined") {
+    window.location.href = "/docs/introduction";
+  }
+
+  return <></>;
 }
 
 export default Home;
