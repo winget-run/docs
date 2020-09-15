@@ -4,7 +4,7 @@ title: Manifests
 ---
 
 ## Overview
-Fetching raw manifest data from the API is covered by this section. While not as much utility is provides for manifest routes compared to packages, such as search, these endpoints provide all of the data that we acquire from GitHub in an unmodified state. This can be quite useful if, for example, some data which we leave out of our package schema is required for your application. If this is the case, we recommend searching through packages and using the retuened ids to request additional data from the routes below.
+Fetching raw manifest data from the API is covered by this section. While not as much utility is provides for manifest routes compared to packages, such as search, these endpoints provide all of the data that we acquire from GitHub in an unmodified state. This can be quite useful if, for example, some data which we leave out of our package schema is required for your application. If this is the case, we recommend searching through packages and using the returned ids to request additional data from the routes below.
 
 ## Schema
 The full manifest schema is shown below. The schema *should* follow the [standards set out by Microsoft](https://docs.microsoft.com/en-us/windows/package-manager/package/manifest).
