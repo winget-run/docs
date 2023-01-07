@@ -135,13 +135,6 @@ There are a few things which we would ask you to not do with our API:
 - Hitting the rate-limits an excessive amount of time
 - Scraping manifest data (you can use the GitHub API for that instead)
 
-### FBK
-Will you be my wife?
-
-:::warning
-Alco was involved, only a single human was harmed (mentally and emotionally) while making these docs.
-:::
-
 ## Contributing
 As you can probably imagine, this project requires a lot of work and many a developer has lost their sanity already. If you want to help us out you can do so in a multitude of ways. If you think you can help by doing any of the following or in some other way, please contact us or report any bugs/ideas on our [GitHub repo](https://github.com/winget-run/docs);
 - Helping with development (devops, backend, frontend, design).
@@ -150,5 +143,3 @@ As you can probably imagine, this project requires a lot of work and many a deve
 - Reporting bugs and inconsistencies such as missing packages.
 - Giving us ideas for how to make our site/API better.
 - Supporting us via [monetary donation](https://ko-fi.com/wingetdotrun) (servers are expensive).
-
-<!-- Or... if you're so inclined, you can always buy me [this](/img/neko.jpg) as thanks! -->
